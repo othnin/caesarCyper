@@ -51,5 +51,5 @@ class Caesar():
 
 if __name__ == '__main__':
     cipher = Caesar()
-    print cipher.encrypt(message='Secret message.', key=13)
-    print cipher.decrypt(message='FRPERG ZRFFNTR.', key=13)
+    print(cipher.encrypt(message='Secret message.', key=13))
+    print(cipher.decrypt(message='FRPERG ZRFFNTR.', key=13))
