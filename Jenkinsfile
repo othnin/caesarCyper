@@ -4,7 +4,12 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                sh 'python main.py'
+                sh 'python src/main.py'
+            }
+        }
+        stage('test') {
+            steps {
+                sh 'python test/test_caesarCyper.py'
             }
         }
     }
